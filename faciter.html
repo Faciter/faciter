@@ -3,26 +3,40 @@
 </head>
 
 <body>
-	<header id="navigation">Navigation</header>
-	<div class="wrapper">
-		-kohde
-		-sukupuoli
-		-lähtömaa
-	</div>
-	<div class="wrapper">
-	  <div class="face">face</div>
-	  <div class="face">face</div>
-	  <div class="face">face</div>
-	  <div class="face">face</div>
-	  <div class="face">face</div>
-	  <div class="face">face</div>
-	  <div class="face">face</div>
-	  <div class="face">face</div>
-	  <div class="face">face</div>
-	</div>
+
+	{{#ionBody}}
+  	{{>yield}}
+	{{/ionBody}}
+
+	{{#ionContent}}
+  	<p>Your content here</p>
+	{{/ionContent}}
+
+	{{> myTemplate}}
+
 </body>
 
 <template name="hello">
   <button>Click Me</button>
   <p>You've pressed the button {{counter}} times.</p>
 </template>
+
+<template name="myTemplate">
+		<header id="navigation">Navigation</header>
+		<div class="wrapper">
+			-kohde
+			-sukupuoli
+			-lähtömaa
+		</div>
+		<div class="wrapper">
+		  <div class="face">face</div>
+		  <div class="face">face</div>
+		  <div class="face">face</div>
+		  <div class="face">face</div>
+		  <div class="face">face</div>
+		  <div class="face">face</div>
+		  <div class="face">face</div>
+		  <div class="face">face</div>
+		  <div class="face">face</div>
+		</div>
+	</template>
