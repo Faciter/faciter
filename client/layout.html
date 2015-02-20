@@ -1,0 +1,19 @@
+<template name="layout">
+  {{#ionBody}}
+  {{> ionNavBar}}
+  {{#ionNavView}}
+    {{> yield}}
+{{/ionNavView}} 
+  {{#if isAndroid}}
+    {{#ionTabs style="android"}}
+      {{> ionTab title="Home" path="home" icon="android-star"}}
+      {{> ionTab title="Social" path="social" icon="android-time"}}
+    {{/ionTabs}}
+  {{else}}
+    {{#ionTabs style="ios"}}
+      {{> ionTab title="Home" path="home" iconOff="ios-bolt-outline" iconOn="ios-bolt" class="tab-item-positive"}}
+      {{> ionTab title="Social" path="social" iconOff="ios-clock-outline" iconOn="ios-clock" class="tab-item-positive"}}
+    {{/ionTabs}}
+  {{/if}}
+{{/ionBody}}
+</template>
