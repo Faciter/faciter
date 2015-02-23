@@ -12,6 +12,14 @@ Meteor.startup(function () {
 });
 
 Router.map(function() {
-  this.route('home', {path: '/'});
-  this.route('social');
+  this.route('findbuddy', {path: '/'});
+  this.route('tips');
+  this.route('friends');
+  this.route('profiles');
+  // given a url like "/profiles/5"
+  // this.route('/profiles/:_id', function () {
+  // var params = this.params; // { _id: "5" }
+  // var id = params._id; // "5"
+  // });
 });
+

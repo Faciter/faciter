@@ -4,16 +4,12 @@
   {{#ionNavView}}
     {{> yield}}
 {{/ionNavView}} 
-  {{#if isAndroid}}
-    {{#ionTabs style="android"}}
-      {{> ionTab title="Home" path="home" icon="android-star"}}
-      {{> ionTab title="Social" path="social" icon="android-time"}}
+<!--  Tabit -->
+    {{#ionTabs}}
+      {{> ionTab title="Find a buddy!" path="findbuddy" icon="happy-outline"}} <!-- title ei jostain syystä näy -->
+      {{> ionTab title="Friends" path="friends" icon="person-stalker"}}
+      {{> ionTab title="Tips" path="tips" icon="earth"}}
     {{/ionTabs}}
-  {{else}}
-    {{#ionTabs style="ios"}}
-      {{> ionTab title="Home" path="home" iconOff="ios-bolt-outline" iconOn="ios-bolt" class="tab-item-positive"}}
-      {{> ionTab title="Social" path="social" iconOff="ios-clock-outline" iconOn="ios-clock" class="tab-item-positive"}}
-    {{/ionTabs}}
-  {{/if}}
+
 {{/ionBody}}
 </template>
