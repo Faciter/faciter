@@ -1,4 +1,11 @@
 <template name="friends">
+
+	{{#contentFor "headerButtonLeft"}}
+    	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+     		{{> ionIcon icon='navicon'}} Profile
+	    </button>
+  	{{/contentFor}}
+
 	{{#contentFor "headerTitle"}}
 		<h1 class="title">Friends</h1>
 	{{/contentFor}}

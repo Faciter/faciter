@@ -1,9 +1,24 @@
 <template name="layout">
+
   {{#ionBody}}
-  {{> ionNavBar}}
-  {{#ionNavView}}
-    {{> yield}}
-{{/ionNavView}} 
+
+    {{#ionSideMenuContainer}}
+      {{#ionSideMenus}}
+        {{#ionSideMenu}}
+        Hello
+        {{/ionSideMenu}}
+        {{#ionSideMenu side="right"}}
+        Hello
+        {{/ionSideMenu}}
+      {{/ionSideMenus}}
+
+      {{#ionSideMenuContent}}
+        {{> ionNavBar}}
+        {{#ionNavView}}
+          {{> yield}}
+        {{/ionNavView}}
+     {{/ionSideMenuContent}}
+    {{/ionSideMenuContainer}} 
 <!--  Tabit -->
     {{#ionTabs}}
       {{> ionTab title="Find a buddy!" path="findbuddy" icon="happy-outline"}} <!-- title ei jostain syystä näy -->
