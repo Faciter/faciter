@@ -1,6 +1,7 @@
 <template name="findbuddy">
-	
-
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">Find a buddy!</h1>
+	{{/contentFor}}
 
   {{#ionView}}
     {{#ionContent}}
@@ -8,62 +9,10 @@
 		<!-- Tätä voisi siistiä -->
 		{{#ionList}}
 			{{#ionItem}}
-			Asia
-			<!-- liukuvalitsin -->
-			<label class="toggle toggle-assertive">
-   				<input type="checkbox">
-   				<div class="track">
-     				<div class="handle"></div>
-   				</div>
-			</label>
-			Europe
-			<!-- liukuvalitsin -->
-			<label class="toggle">
-   				<input type="checkbox">
-   				<div class="track">
-     				<div class="handle"></div>
-   				</div>
-			</label>
-			Nort America
-			<!-- liukuvalitsin -->
-			<label class="toggle">
-   				<input type="checkbox">
-   				<div class="track">
-     				<div class="handle"></div>
-   				</div>
-			</label>
-			South America
-			<!-- liukuvalitsin -->
-			<label class="toggle">
-   				<input type="checkbox">
-   				<div class="track">
-     				<div class="handle"></div>
-   				</div>
-			</label>
-			Africa
-			<!-- liukuvalitsin -->
-			<label class="toggle">
-   				<input type="checkbox">
-   				<div class="track">
-     				<div class="handle"></div>
-   				</div>
-			</label>
-			Australia
-			<!-- liukuvalitsin -->
-			<label class="toggle">
-   				<input type="checkbox">
-   				<div class="track">
-     				<div class="handle"></div>
-   				</div>
-			</label>
-			Antarctica
-			<!-- liukuvalitsin -->
-			<label class="toggle">
-   				<input type="checkbox">
-   				<div class="track">
-     				<div class="handle"></div>
-   				</div>
-			</label>
+			Destinations
+			<button class="button button-clear" data-ion-popover="_Popover">
+				{{> ionIcon icon='more'}}
+			</button>
 			{{/ionItem}}
 			{{#ionItem}}
 			<!-- liukuvalitsin -->

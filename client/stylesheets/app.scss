@@ -42,5 +42,37 @@ $positive: #DE4F4F;
     border: 5px solid black;
     margin: 25px;
     display: inline-block;
-    vertical-align: middle;
+}
+
+.face.small {
+  width: 102px;
+  height: 102px;
+  float: left;
+  margin: 0px;
+  border: 1px solid;
+  img {
+  width:100px;
+  height:100px;
+  }
+}
+
+.info {
+  width: 80%;
+  height: auto;
+  max-height: 7em;
+  margin: 0px;
+  margin-left: 5px;
+  float: left;
+  overflow: hidden;
+  text-align: left;
+  word-break: normal;
+  white-space: normal;
+}
+
+.info p {
+  height: auto;
+  max-height: 6em;
+  word-break: normal;
+  white-space: normal;
+  line-height: 1.5em;
 }
