@@ -16,6 +16,7 @@ Router.map(function() {
   this.route('tips');
   this.route('friends');
   this.route('profiles');
+  this.route('Thailand');
   // given a url like "/profiles/5"
   // this.route('/profiles/:_id', function () {
   // var params = this.params; // { _id: "5" }

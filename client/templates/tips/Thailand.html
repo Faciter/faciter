@@ -1,0 +1,36 @@
+<template name="Thailand">
+	{{#contentFor "headerButtonLeft"}}
+    	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
+     	{{> ionIcon icon='navicon'}} Profile
+	    </button>
+  	{{/contentFor}}
+
+	{{#contentFor "headerTitle"}}
+		<h1 class="title">Thailand</h1>
+	{{/contentFor}}
+
+  	{{#ionView}}
+
+    	{{#ionSubheaderBar}}
+      		{{>ionNavBackButton text="Back" path="tips"}}
+    	{{/ionSubheaderBar}}
+
+    	{{#ionContent}}
+
+			{{#ionList}}
+				{{#ionItem}}
+					Chiang Mai
+					<button class="button button-clear" data-ion-popover="_ChiangMai">
+           				{{> ionIcon icon='chevron-right'}}
+       				</button>
+				{{/ionItem}}
+				{{#ionItem}}
+					Bangkok
+					<button class="button button-clear" data-ion-popover="_Bangkok">
+           				{{> ionIcon icon='chevron-right'}}
+       				</button>
+				{{/ionItem}}
+			{{/ionList}}
+		{{/ionContent}}
+	{{/ionView}}
+</template>

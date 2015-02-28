@@ -9,4 +9,47 @@
 	{{#contentFor "headerTitle"}}
 		<h1 class="title">Tips</h1>
 	{{/contentFor}}
+
+  {{#ionView}}
+    {{#ionSubheaderBar}}
+      <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="search" placeholder="Search">
+      </label>
+    {{/ionSubheaderBar}}
+
+    {{#ionContent}}
+
+      <h2>Suggestions</h2>
+      {{#ionList}}
+        {{#ionItem}}
+          <div class="info">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed posuere interdum sem. Quisque ligula eros ullamcorper quis, lacinia quis facilisis sed sapien. Mauris varius diam vitae arcu. Sed arcu lectus auctor vitae, consectetuer et venenatis eget velit. Sed augue orci, lacinia eu tincidunt et eleifend nec lacus. Donec ultricies nisl ut felis, suspendisse potenti. Lorem ipsum ligula ut hendrerit mollis, ipsum erat vehicula risus, eu suscipit sem libero nec erat. Aliquam erat volutpat. Sed congue augue vitae neque. Nulla consectetuer porttitor pede. Fusce purus morbi tortor magna condimentum vel, placerat id blandit sit amet tortor. Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa. Quisque purus lectus, posuere eget imperdiet nec sodales id arcu. Vestibulum elit pede dictum eu, viverra non tincidunt eu ligula.</p>
+          </div>
+        {{/ionItem}}
+        {{#ionItem}}
+          <div class="info">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed posuere interdum sem. Quisque ligula eros ullamcorper quis, lacinia quis facilisis sed sapien. Mauris varius diam vitae arcu. Sed arcu lectus auctor vitae, consectetuer et venenatis eget velit. Sed augue orci, lacinia eu tincidunt et eleifend nec lacus. Donec ultricies nisl ut felis, suspendisse potenti. Lorem ipsum ligula ut hendrerit mollis, ipsum erat vehicula risus, eu suscipit sem libero nec erat. Aliquam erat volutpat. Sed congue augue vitae neque. Nulla consectetuer porttitor pede. Fusce purus morbi tortor magna condimentum vel, placerat id blandit sit amet tortor. Mauris sed libero. Suspendisse facilisis nulla in lacinia laoreet, lorem velit accumsan velit vel mattis libero nisl et sem. Proin interdum maecenas massa turpis sagittis in, interdum non lobortis vitae massa. Quisque purus lectus, posuere eget imperdiet nec sodales id arcu. Vestibulum elit pede dictum eu, viverra non tincidunt eu ligula.</p>
+          </div>
+        {{/ionItem}}
+      {{/ionList}}
+
+      <h2>Browse</h2>
+
+      {{#ionList}}
+        {{#ionItem path="Thailand"}}
+          Thailand
+          <button class="button button-clear">
+            {{> ionIcon icon='chevron-right'}}
+          </button>
+        {{/ionItem}}
+        {{#ionItem path="Bali"}}
+          Bali
+          <button class="button button-clear" data-ion-popover="Bali">
+            {{> ionIcon icon='chevron-right'}}
+          </button>
+        {{/ionItem}}
+      {{/ionList}}
+    {{/ionContent}}
+  {{/ionView}}
 </template>
