@@ -35,13 +35,14 @@ $positive: #DE4F4F;
 }
 
 .face {
-  background: #66ff33;
-  width: 210px;
-  height: 210px;
-    padding: 0px;
-    border: 5px solid black;
-    margin: 25px;
-    display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 0px;
+  margin: 25px;
+  display: inline-block;
+  img {
+    border-radius: 32px;
+  }
 }
 
 .face.small {
@@ -49,10 +50,10 @@ $positive: #DE4F4F;
   height: 102px;
   float: left;
   margin: 0px;
-  border: 1px solid;
+  margin-right: 14px;
   img {
-  width:100px;
-  height:100px;
+    width:100px;
+    height:100px;
   }
 }
 
@@ -75,4 +76,29 @@ $positive: #DE4F4F;
   word-break: normal;
   white-space: normal;
   line-height: 1.5em;
+}
+
+.list .item {
+  line-height: 44px;
+  text-indent: 2px;
+}
+
+.list label {
+  top: 10px;
+}
+
+div.bar-subheader {
+  height: 60px;
+}
+
+.scroll-content {
+  top: 20px;
+}
+
+.content {
+  padding: 8px 12px 8px 12px;
+}
+
+label.toggle {
+  cursor:pointer;
 }
