@@ -103,6 +103,42 @@ div.bar-subheader button {
 
 .content {
   padding: 8px 12px 8px 12px;
+  background: #F7F2EB;
+}
+
+.scroll-content {
+  background: #F7F2EB;
+}
+
+.snap-drawers {
+  background: #E6DABE;
+}
+
+.snap-drawer-left {
+  box-shadow: inset -26px 1px 40px -27px rgba(0,0,0,0.2);
+  -webkit-box-shadow: inset -26px 1px 40px -27px rgba(0,0,0,0.2);
+  -moz-box-shadow: inset -26px 1px 40px -27px rgba(0,0,0,0.2);
+  -o-box-shadow: inset -26px 1px 40px -27px rgba(0,0,0,0.2);
+}
+
+.snap-drawer-right {
+  box-shadow: inset 26px 1px 40px -27px rgba(0,0,0,0.2);
+  -webkit-box-shadow: inset 26px 1px 40px -27px rgba(0,0,0,0.2);
+  -moz-box-shadow: inset 26px 1px 40px -27px rgba(0,0,0,0.2);
+  -o-box-shadow: inset 26px 1px 40px -27px rgba(0,0,0,0.2);
+}
+
+.menu-content .bar, .tabs {
+  background: #F7DA59;
+}
+
+.toggle input:checked + .track {
+  background-color: #6DCC6A;
+  border-color: #6DCC6A;
+}
+
+.item {
+  background: #FFFCF7;
 }
 
 label.toggle {
