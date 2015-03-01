@@ -41,7 +41,7 @@ $positive: #DE4F4F;
   margin: 25px;
   display: inline-block;
   img {
-    border-radius: 32px;
+    border-radius:9999px;
   }
 }
 
@@ -96,9 +96,9 @@ div.bar-subheader button {
   left: 3px;
 }
 
-.scroll-content {
+.has-subheader {
   margin-top: 20px;
-  margin-bottom: 60px;
+  margin-bottom: 52px;
 }
 
 .content {
