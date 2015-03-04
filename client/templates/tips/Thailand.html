@@ -1,8 +1,6 @@
 <template name="Thailand">
 	{{#contentFor "headerButtonLeft"}}
-    	<button class="button button-clear pull-left" data-ion-menu-toggle="left">
-     	{{> ionIcon icon='navicon'}} Profile
-	    </button>
+	{{>ionNavBackButton text="Back" path="tips"}}
   	{{/contentFor}}
 
 	{{#contentFor "headerTitle"}}
@@ -10,10 +8,6 @@
 	{{/contentFor}}
 
   	{{#ionView}}
-
-    	{{#ionSubheaderBar}}
-      		{{>ionNavBackButton text="Back" path="tips"}}
-    	{{/ionSubheaderBar}}
 
     	{{#ionContent}}
 
