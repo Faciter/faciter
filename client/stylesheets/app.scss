@@ -34,6 +34,7 @@ $positive: #DE4F4F;
   font-size: 25px;
 }
 
+/* Profile picture wrapper */
 .face {
   width: auto;
   height: auto;
@@ -43,9 +44,7 @@ $positive: #DE4F4F;
   img {
     border-radius:9999px;
   }
-}
-
-.face.small {
+}.face.small {
   width: 102px;
   height: 102px;
   float: left;
@@ -57,6 +56,7 @@ $positive: #DE4F4F;
   }
 }
 
+/* Friends in the friends view */
 .info {
   width: 80%;
   height: auto;
@@ -70,6 +70,7 @@ $positive: #DE4F4F;
   white-space: normal;
 }
 
+/* Friend descriptions */
 .info p {
   height: auto;
   max-height: 6em;
@@ -87,6 +88,7 @@ $positive: #DE4F4F;
   top: 10px;
 }
 
+/* Subheader, only used for search bar */
 div.bar-subheader {
   height: 60px;
 }
@@ -96,24 +98,27 @@ div.bar-subheader button {
   left: 3px;
 }
 
+/* Some extra space for the UI because of the search bar */
 .has-subheader {
   margin-top: 17px;
   margin-bottom: 49px;
 }
 
+/* Content spacing */
 .content {
   padding: 8px 12px 8px 12px;
   background: #F7F2EB;
 }
-
 .scroll-content {
   background: #F7F2EB;
 }
 
+/* Side menus */
 .snap-drawers {
   background: #E6DABE;
 }
 
+/* Left side menu */
 .snap-drawer-left {
   box-shadow: inset -26px 1px 40px -27px rgba(0,0,0,0.2);
   -webkit-box-shadow: inset -26px 1px 40px -27px rgba(0,0,0,0.2);
@@ -121,6 +126,7 @@ div.bar-subheader button {
   -o-box-shadow: inset -26px 1px 40px -27px rgba(0,0,0,0.2);
 }
 
+/* Right side menu */
 .snap-drawer-right {
   box-shadow: inset 26px 1px 40px -27px rgba(0,0,0,0.2);
   -webkit-box-shadow: inset 26px 1px 40px -27px rgba(0,0,0,0.2);
@@ -128,19 +134,22 @@ div.bar-subheader button {
   -o-box-shadow: inset 26px 1px 40px -27px rgba(0,0,0,0.2);
 }
 
+/* Background color of the main menu bars */
 .menu-content .bar, .tabs {
   background: #F7DA59;
 }
 
+/* Change toggle button default Ionic colours */
 .toggle input:checked + .track {
   background-color: #6DCC6A;
   border-color: #6DCC6A;
 }
 
-.item {
-  background: #FFFCF7;
-}
-
+/* Change toggle button cursor on computers */
 label.toggle {
   cursor:pointer;
+}
+
+.item {
+  background: #FFFCF7;
 }
