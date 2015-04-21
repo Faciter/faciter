@@ -11,7 +11,14 @@
     {{#ionSideMenuContainer}}
       {{#ionSideMenus}}
         {{#ionSideMenu}}
-        {{> loginButtons}}
+          <div class="row responsive-lg">
+            <div class="col username">
+              {{currentUser.profile.name}}
+            </div>
+          </div>
+          <div class="row responsive-lg">
+            {{> loginButtons}}
+          </div>
         {{/ionSideMenu}}
         {{#ionSideMenu side="right"}}
         Hello

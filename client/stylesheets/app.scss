@@ -159,6 +159,10 @@ div.bar-subheader button {
   -o-box-shadow: inset 26px 1px 40px -27px rgba(0,0,0,0.2);
 }
 
+.snap-drawer .button {
+  width: 100%;
+}
+
 /* Background color of the main menu bars */
 .menu-content .bar, .tabs {
   background: #F7DA59;
@@ -177,4 +181,91 @@ label.toggle {
 
 .item {
   background: #FFFCF7;
+}
+
+.login-button {
+  border-color: #b2b2b2;
+  background-color: #f8f8f8;
+  color: #444;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0 12px;
+  min-width: 52px;
+  min-height: 47px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px;
+  vertical-align: top;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  line-height: 42px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  color: #444;
+  text-decoration: none;
+}
+
+.login-button.active,
+.login-button.activated {
+  border-color: #a2a2a2;
+  background-color: #e5e5e5;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.login-button:after {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  bottom: -6px;
+  left: -6px;
+  content: ' ';
+}
+
+#login-buttons-logout {
+  border-color: #e42112;
+  background-color: #ef473a;
+  color: #fff;
+  width: 100%;
+}
+
+#login-buttons-facebook {
+  border-color: #eeeff4;
+  background-color: #3b5999;
+  color: #fff;
+  padding-left:34px;
+}
+
+#login-buttons-facebook:before {
+  position:absolute;
+  font-family: FontAwesome;
+  top:0;
+  left: 14px;
+  content: "";
+}
+
+#login-buttons-facebook:active {
+  border-color: #eeeff4;
+  background-color: #3b5999;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.snap-drawer #login-buttons {
+  width: 100%;
+}
+
+#login-buttons {
+  text-align: center;
+}
+
+.login-display-name {
+  display: none;
+}
+
+.username {
+  text-align: center;
+  font-size: 1.1em;
 }
