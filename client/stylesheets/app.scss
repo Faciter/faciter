@@ -113,6 +113,31 @@ div.bar-subheader button {
   background: #F7F2EB;
 }
 
+.loginBody {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column; /* works with row or column */
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  height: 100%;
+  background: url('images/bg.jpg');
+  background-size: cover;
+}
+
+.loginBody h1 {
+  font-size: 5.8em;
+  line-height: 0.8em;
+  font-family: 'Kaushan Script', cursive;
+  margin-bottom: 40px;
+  text-shadow: 0 3px 0 #7D745C;
+  color: #F7DA59;
+  -webkit-transition: 0.1s; /* Safari */
+  transition: 0.1s;
+}
+
 /* Side menus */
 .snap-drawers {
   background: #E6DABE;
