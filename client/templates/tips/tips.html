@@ -37,18 +37,14 @@
       <h2>Browse</h2>
 
       {{#ionList}}
+        {{#each continents}}
         {{#ionItem path="Thailand"}}
-          Thailand
+          {{name}}
           <button class="button button-clear">
             {{> ionIcon icon='chevron-right'}}
           </button>
         {{/ionItem}}
-        {{#ionItem path="Bali"}}
-          Bali
-          <button class="button button-clear" data-ion-popover="Bali">
-            {{> ionIcon icon='chevron-right'}}
-          </button>
-        {{/ionItem}}
+        {{/each}}
       {{/ionList}}
     {{/ionContent}}
   {{/ionView}}
