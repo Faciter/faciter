@@ -1,11 +1,17 @@
 <template name="layout">
 
-  {{#ionBody}}
+  {{#unless currentUser}}
+    {{> login}}
+   {{else}}
+    {{> yield}}
+  {{/unless}}
 
+  {{#ionBody}}
+    {{#if currentUser}}
     {{#ionSideMenuContainer}}
       {{#ionSideMenus}}
         {{#ionSideMenu}}
-        Hello
+        {{> loginButtons}}
         {{/ionSideMenu}}
         {{#ionSideMenu side="right"}}
         Hello
@@ -18,13 +24,13 @@
           {{> yield}}
         {{/ionNavView}}
      {{/ionSideMenuContent}}
-    {{/ionSideMenuContainer}} 
+    {{/ionSideMenuContainer}}
 <!--  Tabit -->
     {{#ionTabs}}
       {{> ionTab title="Find a buddy!" path="findbuddy" icon="happy-outline"}} <!-- title ei jostain syystä näy -->
       {{> ionTab title="Friends" path="friends" icon="person-stalker"}}
       {{> ionTab title="Tips" path="tips" icon="earth"}}
     {{/ionTabs}}
-
+    {{/if}}
 {{/ionBody}}
 </template>
